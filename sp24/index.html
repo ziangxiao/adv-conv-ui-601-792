@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <meta property="og:site_name" content="EN.601.792 (Advanced Topics in Conversational User Interfaces)">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="EN.601.792 (Advanced Topics in Conversational User Interfaces)">
+    <meta property="og:description" content="Course on the latest research in Conversational User Interfaces">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EN.601.792: Advanced Topics in Conversational User Interfaces">
+    <!-- meta name="twitter:description" content="Discussing latest breakthroughs in self-supervised language models" -->
+    <!-- meta name="twitter:url" content="https://self-supervised.cs.jhu.edu/" -->
+
+    <title>601.792: Advanced Topics in Conversational User Interfaces </title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../files/bootstrap.min.css">
+
+    <!-- Google fonts -->
+    <link href="../files/fonts.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="../files/style.css">
+    <link rel="stylesheet" href="../files/font-awesome.min.css">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="../files/favicon.ico"/>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1063.0" data-gr-ext-installed="">
+
+<!-- <script src="header.js"></script> -->
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand brand" href="index.html">EN.601.792</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#intro">Overview</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="#conduct">Policies</a></li>
+                <!-- li><a href="https://github.com/JHU-CLSP/csci-601-771-self-supervised-models">Edit this page!</a></li -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<div id="header" style="text-align:center">
+    <!--    <img src="files/blank.png" class="logo-left">-->
+    <a href="https://www.cs.jhu.edu/">
+        <img src="../files/jhu_shield.png" class="logo-right">
+    </a>
+<!--    <a href="https://www.clsp.jhu.edu/">-->
+<!--        <img src="files/clsp-logo.png" class="logo-right">-->
+<!--    </a>-->
+    <h1>EN.601.792: Advanced Topics in Conversational User Interfaces</h1>
+    <h3>Johns Hopkins University - Spring 2024</h3>
+    <div style="clear:both;"></div>
+</div>
+
+<!-- Intro -->
+<div class="container sec" id="intro">
+    <p>
+        As a critical component of Human-Computer Interaction, conversational user interfaces (CUIs) can potentially revolutionize the way we interact with technology. This course is designed for graduate students who want to gain a deeper understanding of CUIs and their real-world applications. Throughout the course, we will explore cutting-edge research and methodologies for designing, implementing, and evaluating CUIs. Various topics of conversational interfaces will be covered, including design principles, evaluation, human agency, etc.
+    </p>
+
+    <p>
+        <strong>Prerequisites</strong>:
+        Introduction to Human-Computer Interaction (EN.601.490/690), at least one graduate-level computer science course in Artificial Intelligence or Machine Learning
+        (including NLP, Computer Vision, etc.) is preferred, or permission of the instructor.
+        Students must be comfortable reading recent research papers and discussing key concepts and ideas.
+    </p>
+
+</div>
+
+<!-- Staff Info -->
+<div class="sechighlight">
+    <div class="container sec" id="people">
+        <div class="col-md-5" style="width: 100%; text-align: center">
+            <h3>Instructors</h3>
+            <div class="instructor">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.ziangxiao.com/">
+                    <div>Ziang Xiao</div>
+                </a>
+            </div>
+            <div class="instructor">
+                <a target="_blank" rel="noopener noreferrer" href="?">
+                <!--    <div class="instructorphoto"><img src="files/blank.png" alt="missing image"></div> -->
+                    <div>Leo Du <br>(Teaching Assistant)</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logistics -->
+    <div class="container sec" id="logistics">
+        <ul>
+            <li><b>Classes:</b> on Monday/Wednesday 15:00 - 16:30 pm EST (Hodson 211)</li>
+            <li><b>Office hours:</b>
+                Ziang: Tuesday 4-5pm Malone 309</li>
+            <li><b>Class Structure</b>: The class will be in-person. Each session will primarily involve small-group discussions 
+                of recent or highly impactful papers on Conversational AI. Students will also complete a course project in a group of 2-3 students.
+            </li>
+            <li><b>Piazza</b>: Please join the class Piazza <a href="">TBA</a>
+            </li>
+            <li><b>Coursework:</b>
+            <ul>
+                <li>Readings (~2 papers) for each class period.</li>
+                <li>A short (2-paragraph) written response to the readings is to be posted on Piazza by 12 pm on the day of the class. These responses
+                    should raise questions appropriate for discussion or propose ideas to think about.</li>
+                <li>Presenter: Everyone will be the lead discussant in their discussion groups at least two times over the semester. Starting from week 2, there will be one presenter for each reading. Each presenter should give a 10-min presentation with two parts, a short (5-min) summary and a short (5-min) disucssion starter (5-min). For the discussion starter, you could put your reviewer hat on to critique the paper, being a visionary to propose an imaginary follow-up research project or a new application, or an empiricist to situate the paper in real-world contexts.</li>
+                <li> Lead Discussant: The main purpose of the class is to create a stimulating environment in which to share and critique ideas. The class will randomly split into a few groups and you will share your critical ideas/critiques/experiences on the topic. Everyone will be the lead discussant in their discussion groups at several times over the semester. The lead discussants should have read all the readings and the response paragraphs. They will lead and organize the discussion in their group and synthesize for reporting back to the whole class.
+                </li>
+                <li>A final project (in a group of 2-3 students). This can be a system paper (e.g., a novel system you built with a usability study), a study paper (e.g., an experiment that reveals people's behavioral patterns), an analytic paper (e.g., evaluating or auditing existing systems), etc. [Your idea should not be limited by the format. We can discuss if you prefer a different format.]
+                
+                    See <a href="">Project</a> for details (TBD) </li>
+            </ul>
+
+            <li><b>Grading:</b>
+                <ul>
+                    <li> Reading responses (15%) </li>
+                    <li> Class presentation (10%) </li>
+                    <li> Class lead discussant (20%) </li>
+                    <li> Project literature review (10%) </li>
+                    <li> Project written proposal and presentation (15%) </li>
+                    <li> Project final presentation and paper (25%) </li>
+                    <li> Anonymous course feedback (5%) </li>
+                </ul>
+            <li><b>Attendance policy:</b>
+                This is a graduate-level course revolving around in-person discussion. Students are expected to attend class and may
+                notify instructors if there are extenuating circumstances.
+            </li>
+        </ul>
+        <b>Acknowledgements</b>
+            Thank you to Prof. Anjalie Field and Prof. Daniel Khashabi for sharing the course website template!
+        </li>
+
+        <br>
+    </div>
+</div>
+
+<div class="container sec" id="schedule" style="margin-top:-20px">
+    <br>
+    <h2>Schedule</h2>
+    <p> The current class schedule is below. The schedule is subject to change, particularly the specific readings: </p>
+
+    <table class="table">
+        <colgroup>
+            <col style="width:10%">
+            <col style="width:18%">
+            <col style="width:60%">
+            <col style="width:25%">
+
+        </colgroup>
+        <thead>
+        <tr class="active">
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Readings</th>
+            <th>Work Due</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Mon Jan 22</td>
+            <td>Course Overview - History and Evolution of Conversational User Interface [<a href="">Slides</a>]</td>
+            <td></td>
+            <td>No Required Reading</td>
+        </tr>
+        <tr>
+            <td>Wed Jan 24</td>
+            <td>From Text to Multimodal CUI</td>
+            <td>
+                <ol>
+                    <li>(Optional) <a href="https://dl.acm.org/doi/10.1145/365153.365168"> ELIZA—a computer program for the study of natural language communication between man and machine </a></li>   
+               </ol>
+            </td>
+            <td>No Required Reading</td>
+        </tr>
+        <tr>
+            <td>Mon Jan 28</td>
+            <td>Communication Principles [<a href="">Slides</a>]</td>
+            <td>
+                    <ol>
+                        <li><a href="https://effectiviology.com/principles-of-effective-communication/"> Grice's Maxims of Conversation: The Principles of Effective Communication </a></li>   
+                        <li><a href="https://dl.acm.org/doi/abs/10.1145/3290605.3300484"> Resilient Chatbots: Repair Strategy Preferences for Conversational Breakdowns </a></li>  
+                   </ol>
+            </td>
+            <td>Reading Responses by 12:00pm Monday</td>
+        </tr>
+        <tr>
+            <td>Wed Jan 31</td>
+            <td>Metaphors in Conversational User Interface [<a href="">Slides</a>]</td>
+            <td>
+                <ol>
+                    <li><a href="https://dl.acm.org/doi/10.1145/191666.191703"> Computers are social actors </a></li>   
+                    <li><a href="https://dl.acm.org/doi/abs/10.1145/3415234"> Conceptual Metaphors Impact Perceptions of Human-AI Collaboration </a></li> 
+                    <li>(Optional)<a href="https://www.amazon.com/Metaphors-We-Live-George-Lakoff/dp/0226468011"> Metaphors We Live By </a></li> 
+                </ol>
+            </td>
+          <td>Anonymous course feedback by class Wednesday, Reading Responses by 12pm Wednesday</td>
+        </tr>
+
+        <tr>
+            <td>Mon Feb 5</td>
+            <td>Conversational Recommender Systems: Understanding Humans [<a href="">Slides</a>]</td>
+            <td>
+                <ol>
+               </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+
+        </tr>
+
+        <tr>
+            <td>Wed Feb 7</td>
+            <td>Conversational Search: Mixed-Initiative Interactions [<a href="">Slides</a>]</td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Mon Feb 12</td>
+            <td>CUI for Health</td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Wed Feb 14</td>
+            <td>LLMs I: Building LLM-based CUI</td>
+            <td>
+            <ol>
+            </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Mon Feb 19</td>
+            <td>LLMs II: Building CUI with LLM</td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+
+        <tr>
+            <td>Wed Feb 21</td>
+            <td>LLMs III: Responsible Use of LLMs in CUI</td>
+            <td>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+
+        <tr>
+            <td>Mon Feb 26</td>
+            <td>Project Proposal</td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td></td>
+        </tr>
+
+
+        <tr>
+            <td>Mon Feb 28</td>
+            <td>Project Proposal</td>
+            <td>
+                <ol>
+                </ol>
+                
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+
+        <tr>
+            <td>Mon Mar 4</td>
+            <td>Evaluation I: Measurement Theory</td>
+            <td>
+            <ol>
+            </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Wed Mar 6</td>
+            <td>Evaluation II: Benchmarks</td>
+            <td>   
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Mon Mar 11</td>
+            <td>Evaluation III: Controlled Experiments</td>
+            <td>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Wed Mar 13</td>
+            <td>Evaluation IV: Conversation Analysis</td>
+            <td></td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Mon Mar 18</td>
+            <td>Spring Break</td>
+            <td>
+            <td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Wed Mar 20</td>
+            <td>Spring Break</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Mon Mar 25</td>
+            <td>Human Agency in CUI I: Anthropomorphism I - The Good</td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Wed Mar 27</td>
+            <td>Human Agency in CUI II: Anthropomorphism II - The Ugly</td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td>
+                Reading Responses by 12pm
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Mon Apr 1</td>
+            </td>
+            <td>Human Agency in CUI III: Privacy</td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Wed Apr 3</td>
+            <td>Collaborating through CUI</a></td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Mon Apr 8</td>
+            <td>Designing Explainability for CUI</td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+
+        <tr>
+            <td>Wed Apr 10</td>
+            <td>Natural Language Interface beyond CUI</td>
+            <td>
+                <ol>
+                </ol>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+        <tr>
+            <td>Mon Apr 15</td>
+            <td>TBD - Topic Selected by Students</td>
+            <td>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+
+        <tr>
+            <td>Wed Apr 17</td>
+            <td>TBD - Topic Selected by Students</td>
+            <td>
+            </td>
+            <td>Reading Responses by 12pm</td>
+        </tr>
+
+
+        <tr>
+            <td>Mon Apr 22</td>
+            <td>Project Final Presentation</td>
+            <td>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Wed Apr 24</td>
+            <td>Project Final Presentation</td>
+            <td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mon Apr 30</td>
+            <td>No Class - Reading Days</td>
+            <td>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Wed May 2</td>
+            <td>No Class - Reading Days</td>
+            <td>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="container sec" id="conduct">
+    <h2>Policies</h2>
+    <p><b>Attendance policy</b>
+    This is a graduate-level course revolving around in-person discussion. Students are expected to attend class and may notify
+    instructors if there are extenuating circumstances.
+
+    <p><b>Course Conduct</b>
+        This is a discussion class focused on cutting-edge research. All students are expected to respect everyone's perspective and input
+        and to contribute towards creating a welcoming and inclusive climate.
+        We the instructors will strive to make this classroom an inclusive space for all students, and we welcome feedback
+        on ways to improve.
+    </p>
+    <p>
+        <b>Academic Integrity</b>
+        This course will have a zero-tolerance philosophy regarding <a
+            href="https://www.cs.jhu.edu/academic-programs/academic-integrity-code/">plagiarism or other forms of
+        cheating</a>, and incidents
+        of academic dishonesty will be reported. A student who has doubts about how the Honor Code applies to this
+        course should obtain specific guidance from the course instructor before submitting the respective assignment.
+    </p>
+    <p>
+        <b>Discrimination and Harrasment</b>
+        The Johns Hopkins University is committed to equal opportunity for its faculty, staff, and students.
+        To that end, the university does not discriminate on the basis of sex, gender, marital status, pregnancy, race, color, ethnicity, national origin, age, disability, religion, sexual orientation, gender identity or expression, veteran status, military status, immigration status or other legally protected characteristic.
+        The University's <a href="https://oie.jhu.edu/policies-and-laws/JHU-Discrimination-and-Harassment-Policy-and-Procedures-7.1.21-Present">Discrimination and Harassment Policy and Procedures</a> provides information on how to report or file a complaint of discrimination or harassment based on any of the protected statuses listed in the earlier sentence, and the University’s prompt and equitable response to such complaints.
+    </p>
+
+    <p>
+        <b>Personal Well-being</b>
+        Take care of yourself! Being a student can be challenging and your physical and mental health is important. If you need support,
+        please seek it out. Here are several of the many helpful resources on campus:
+        <ul>
+            <li><a href="https://studentaffairs.jhu.edu/student-health/">Student Health and Wellness Center</a></li>
+            <li><a href="https://studentaffairs.jhu.edu/counselingcenter/">JHU Counseling Center</a></li>
+            <li><a href="http://web.jhu.edu/disabilities/">JHU Office for Student Disability Services</a></li>
+            <li><a href="https://studentaffairs.jhu.edu/student-life/student-outreach-support/">Student Outreach & Support</a></li>
+        </ul>
+    </p>
+</div>
+
+
+
+<!-- jQuery and Bootstrap -->
+<script src="../files/jquery.min.js"></script>
+<script src="../files/bootstrap.min.js"></script>
+
+
+</body>
+</html>
