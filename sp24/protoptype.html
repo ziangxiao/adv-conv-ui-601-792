@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Mockup</title>
+<style>
+  /* Basic styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .sidebar {
+    flex: 1;
+    border-right: 1px solid #ccc;
+  }
+  .feed {
+    flex: 2;
+    padding: 20px;
+  }
+  .right-sidebar {
+    flex: 1;
+    border-left: 1px solid #ccc;
+  }
+  .post {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  .navigation, .post-actions {
+    list-style-type: none;
+    padding: 0;
+  }
+  .navigation li, .post-actions li {
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  /* More styles can be added to match the mockup */
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <!-- Navigation -->
+  <ul class="navigation">
+    <li>Home</li>
+    <li>Notifications</li>
+    <!-- Add other navigation items here -->
+  </ul>
+</div>
+
+<div class="feed">
+  <!-- Post 1 -->
+  <div class="post">
+    <h4>User Name</h4>
+    <p>Timestamp</p>
+    <p>Post content...</p>
+    <!-- Post actions -->
+    <ul class="post-actions">
+      <li>Like</li>
+      <li>Comment</li>
+      <li>Share</li>
+    </ul>
+  </div>
+  <!-- More posts can be added here -->
+</div>
+
+<div class="right-sidebar">
+  <!-- AI feedback or other content -->
+  <p>AI Feedback content...</p>
+</div>
+
+</body>
+</html>
